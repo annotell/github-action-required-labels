@@ -11,6 +11,6 @@ jobs:
       - name: Install deps and build
         run: npm ci --only=production && npm run build
       - name: Automatically build action
-        uses: JasonEtco/build-and-tag-action@v2
+        uses: JasonEtco/build-and-tag-action@dd5e4991048c325f6d85b4155e586fc211c644da # lock to v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
